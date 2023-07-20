@@ -1,4 +1,5 @@
 "use client";
+import AuthCheckAccount from "@/components/Auth/AuthCheckAccount";
 import AuthForm from "@/components/Form/AuthForm";
 import RegisterForm from "@/components/Form/RegisterForm";
 import Container from "@/components/Layout/Container";
@@ -18,27 +19,7 @@ const page = () => {
         </SectionSubtitle>
         {stateForm ? <RegisterForm /> : <AuthForm />}
         <SectionDescription className="mx-auto">
-          {stateForm ? (
-            <div>
-              <span>Уже есть аккаунт ? </span>
-              <button
-                className=" text-blue-400"
-                onClick={(): void => setStateForm(!stateForm)}
-              >
-                Войти
-              </button>
-            </div>
-          ) : (
-            <div>
-              <span>Нет аккаунта ? </span>
-              <button
-                className=" text-blue-400"
-                onClick={(): void => setStateForm(!stateForm)}
-              >
-                Зарегистрируйтесь
-              </button>
-            </div>
-          )}
+          <AuthCheckAccount stateForm={stateForm} setStateForm={setStateForm}/>
         </SectionDescription>
       </FlexColumn>
     </Container>
