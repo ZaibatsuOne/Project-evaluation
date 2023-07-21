@@ -75,7 +75,7 @@ const HomePageStart: FC = () => {
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 6 }}
+              transition={{ duration: 2 }}
             >
               <FlexColumn className="flex flex-col items-center gap-5">
                 <span className="flex justify-center items-center w-10 h-10 bg-white rounded-full text-2xl text-black font-bold">
