@@ -2,10 +2,10 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 export default function CreateProjectButton() {
   return (
-    <div className="flex justify-center items-center mt-20">
+    <div className="flex justify-center items-center">
       <div className="relative group  z-10">
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-[#e84393] animate-tilt  to-[#6c5ce7] rounded-lg blur opacity-75 group-hover:opacity-100 transistion duration-200"></div>
-        <button className="relative bg-black text-white rounded-lg">
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-[#e84393] animate-tilt  to-[#6c5ce7] rounded-lg blur-xl opacity-50 group-hover:opacity-100 transistion duration-200"></div>
+        <button className="relative bg-systemWhite text-systemBlack rounded-lg">
           <Link
             href="/auth"
             className="flex gap-5 text-[20px] p-5 font-normal  "

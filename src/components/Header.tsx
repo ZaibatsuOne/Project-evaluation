@@ -15,7 +15,7 @@ export default function Header() {
       </Link>
       <Link
         href="/auth"
-        className="px-9 py-4 text-black font-bold bg-gray-200 rounded-[30px]"
+        className="px-9 py-4 font-bold bg-systemBlue text-systemWhite rounded-[30px]"
       >
         Войти
       </Link>

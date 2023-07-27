@@ -1,22 +1,23 @@
-import SectionTitle from "../UI/SectionTitle";
-import CreateProjectButton from "../UI/Buttons/CreateProjectButton";
-import FlexColumn from "../Layout/Flex/FlexColumn";
 import Container from "../Layout/Container";
+import FlexColumn from "../Layout/Flex/FlexColumn";
+import CreateProjectButton from "../UI/Buttons/CreateProjectButton";
+import SectionSubtitle from "../UI/Section/SectionSubtitle";
 
 const HomePageHeader = () => {
   return (
-    <>
-      <div className="absolute -top-[850px] -z-10 left-[21px] w-[901px] h-[720px] bg-gradient-to-b from-purple-500 to-blue-500 rounded-full blur-[500px]" />
-      <Container>
-        <FlexColumn className="text-center">
-          <SectionTitle className="w-1/2 mx-auto">
-            Знание рисков - ключ к проектному{" "}
-            <span className="text-blue-400">превосходству.</span>
-          </SectionTitle>
+    <Container>
+      <section className="text-center px-60">
+        <FlexColumn className="gap-14">
+          <h1 className="flex text-systemDarkGrey text-[58px] font-black leading-[66px]">
+            Управляйте своими проектами и сотрудничайте с командами
+          </h1>
+          <SectionSubtitle>
+            Инструмент для визуализации, организации и оценки всей вашей работы.
+          </SectionSubtitle>
           <CreateProjectButton />
         </FlexColumn>
-      </Container>
-    </>
+      </section>
+    </Container>
   );
 };
 

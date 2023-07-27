@@ -1,5 +1,5 @@
-import { FC } from "react";
 import FlexColumn from "../Layout/Flex/FlexColumn";
+import { FC } from "react";
 
 const AuthForm: FC = () => {
   return (

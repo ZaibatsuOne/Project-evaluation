@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-[#000000] text-white;
+  @apply bg-systemWhite text-systemBlack;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
