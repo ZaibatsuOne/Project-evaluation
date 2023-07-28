@@ -6,18 +6,22 @@ const RegisterForm: FC = () => {
     {
       placeholder: "Почта",
       name: "email",
+      type: "text",
     },
     {
       placeholder: "Логин",
       name: "login",
+      type: "text",
     },
     {
       placeholder: "Пароль",
       name: "password",
+      type: "password",
     },
     {
       placeholder: "Подтвердите пароль",
       name: "submitPassword",
+      type: "password",
     },
   ];
   return <DynamicForm fields={fields} />;
