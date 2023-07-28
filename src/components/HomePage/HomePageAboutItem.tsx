@@ -29,7 +29,7 @@ const HomePageAboutItem: FC<Props> = ({ item }) => {
         className="flex h-[479px] object-cover rounded-[40px] grayscale"
       />
 
-      <FlexColumn className="gap-5 w-full">
+      <FlexColumn className="gap-5 w-1/3">
         <h3 className="text-4xl font-bold">{item.title}</h3>
         <p>{item.subtitle}</p>
       </FlexColumn>

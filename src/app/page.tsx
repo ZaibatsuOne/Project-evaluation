@@ -6,6 +6,8 @@ import Container from "@/components/Layout/Container";
 import HomePageBrands from "@/components/HomePage/HomePageBrands";
 import HomePageMetrics from "@/components/HomePage/HomePageMetrics";
 import HomePageAbout from "@/components/HomePage/HomePageAbout";
+import HomePagePlans from "@/components/HomePage/HomePagePlans";
+import HomePageRewiew from "@/components/HomePage/HomePageRewiew";
 
 export default function Home() {
   return (
@@ -28,6 +30,14 @@ export default function Home() {
             <HomePageAbout />
           </FlexColumn>
         </Container>
+        <FlexColumn className="bg-systemBlack gap-52">
+          <Container>
+            <FlexColumn className="gap-52">
+              <HomePagePlans />
+              <HomePageRewiew />
+            </FlexColumn>
+          </Container>
+        </FlexColumn>
       </FlexColumn>
     </>
   );

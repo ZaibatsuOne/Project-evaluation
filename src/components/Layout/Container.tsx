@@ -1,8 +1,16 @@
-import { FC, ReactNode } from "react";
-
-const Container: FC<{ children: ReactNode }> = ({ children }) => {
+import { FC, PropsWithChildren, ReactNode } from "react";
+import cn from "clsx";
+const Container: FC<PropsWithChildren<{ className?: string }>> = ({
+  children,
+  className,
+}) => {
   return (
-    <div className="relative max-w-[350px] lg:max-w-[1297px] ml-auto mr-auto">
+    <div
+      className={cn(
+        "relative max-w-[350px] lg:max-w-[1297px] ml-auto mr-auto",
+        className
+      )}
+    >
       {children}
     </div>
   );

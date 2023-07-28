@@ -6,6 +6,9 @@
   .card {
     @apply flex w-96 h-96 rounded-xl bg-systemGrey4 shadow-xl;
   }
+  .defaultBtn {
+    @apply bg-systemGrey5 rounded-xl p-2 text-systemDarkGrey font-semibold;
+  }
 }
 :root {
   @apply bg-systemWhite text-systemBlack;
