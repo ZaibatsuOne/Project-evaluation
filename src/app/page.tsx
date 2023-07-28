@@ -8,6 +8,7 @@ import HomePageMetrics from "@/components/HomePage/HomePageMetrics";
 import HomePageAbout from "@/components/HomePage/HomePageAbout";
 import HomePagePlans from "@/components/HomePage/HomePagePlans";
 import HomePageRewiew from "@/components/HomePage/HomePageRewiew";
+import HomePageFooter from "@/components/HomePage/HomePageFooter";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
             <FlexColumn className="gap-52">
               <HomePagePlans />
               <HomePageRewiew />
+              <HomePageFooter />
             </FlexColumn>
           </Container>
         </FlexColumn>

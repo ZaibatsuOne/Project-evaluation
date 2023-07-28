@@ -24,7 +24,9 @@ const HomePageReviewItem: FC<Props> = ({ item }) => {
           height={100}
           className="rounded-full w-16 h-16 object-cover"
         />
-        <p className="line-clamp-[7] text-ellipsis">{item.review}</p>
+        <p className="line-clamp-[7] text-ellipsis font-semibold">
+          {item.review}
+        </p>
       </FlexColumn>
       <span>{item.name}</span>
     </SectionCard>
