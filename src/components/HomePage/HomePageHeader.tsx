@@ -6,17 +6,15 @@ import SectionSubtitle from "../UI/Section/SectionSubtitle";
 const HomePageHeader = () => {
   return (
     <Container>
-      <section className="text-center px-60">
-        <FlexColumn className="gap-14">
-          <h1 className="flex text-systemDarkGrey text-[58px] font-black leading-[66px]">
-            Управляйте своими проектами и сотрудничайте с командами
-          </h1>
-          <SectionSubtitle>
-            Инструмент для визуализации, организации и оценки всей вашей работы.
-          </SectionSubtitle>
-          <CreateProjectButton />
-        </FlexColumn>
-      </section>
+      <FlexColumn className="gap-14 justify-center items-center text-center mx-auto">
+        <h1 className="flex text-systemDarkGrey text-4xl xl:text-6xl w-full xl:w-1/2 font-black leading-8 xl:leading-[66px]">
+          Управляйте своими проектами и сотрудничайте с командами
+        </h1>
+        <SectionSubtitle>
+          Инструмент для визуализации, организации и оценки всей вашей работы.
+        </SectionSubtitle>
+        <CreateProjectButton />
+      </FlexColumn>
     </Container>
   );
 };

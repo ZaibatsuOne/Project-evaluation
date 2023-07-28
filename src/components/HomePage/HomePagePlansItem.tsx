@@ -1,7 +1,7 @@
-import { FC } from "react";
 import FlexColumn from "../Layout/Flex/FlexColumn";
-import { IoMdCheckmark } from "react-icons/io";
 import SectionCard from "../UI/Section/SectionCard";
+import { FC } from "react";
+import { IoMdCheckmark } from "react-icons/io";
 
 interface itemProps {
   id: number;

@@ -20,16 +20,18 @@ const HomePageAboutItem: FC<Props> = ({ item }) => {
         item.id === 2 ? `flex-row-reverse` : ` `
       }`}
     >
-      <Image
-        src={item.icon}
-        width={479}
-        height={479}
-        quality={100}
-        alt="123"
-        className="flex h-[479px] object-cover rounded-[40px] grayscale"
-      />
+      <div className="ml-10 mr-10 lg:mx-0 w-full lg:w-[979px]  ">
+        <Image
+          src={item.icon}
+          width={979}
+          height={479}
+          quality={100}
+          alt="123"
+          className="flex h-[479px] object-cover rounded-[40px] grayscale"
+        />
+      </div>
 
-      <FlexColumn className="gap-5 w-1/3">
+      <FlexColumn className="gap-5 mx-10">
         <h3 className="text-4xl font-bold">{item.title}</h3>
         <p>{item.subtitle}</p>
       </FlexColumn>

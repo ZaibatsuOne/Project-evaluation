@@ -8,7 +8,7 @@ export default function CreateProjectButton() {
         <button className="relative bg-systemWhite text-systemBlack rounded-lg">
           <Link
             href="/auth"
-            className="flex gap-5 text-[20px] p-5 font-normal  "
+            className="flex gap-5 text-sm xl:text-xl p-5 font-normal  "
           >
             Cоздайте свой первый проект
             <span>|</span>
