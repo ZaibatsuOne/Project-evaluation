@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card {
+    @apply flex w-96 h-96 rounded-xl bg-systemGrey4 shadow-xl;
+  }
+}
 :root {
   @apply bg-systemWhite text-systemBlack;
   font-family: "Plus Jakarta Sans", sans-serif;

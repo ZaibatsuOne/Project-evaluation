@@ -7,17 +7,16 @@ import microsoftAzureIcon from "../../../public/brands-logo/Microsoft Azure Logo
 import yandexIcon from "../../../public/brands-logo/Yandex Logotype.svg";
 import BrandLogo from "../UI/BrandLogo";
 import Marquee from "react-fast-marquee";
-import Image from "next/image";
 
 const HomePageBrands = () => {
   const listIcon: string[] = [
     framerIcon,
     googleTagIcon,
-    microsoftAzureIcon,
     yandexIcon,
     iCloudIcon,
     marketoIcon,
     notionIcon,
+    microsoftAzureIcon,
   ];
   return (
     <section>

@@ -4,6 +4,8 @@ import FlexColumn from "@/components/Layout/Flex/FlexColumn";
 import HomePageHeader from "@/components/HomePage/HomePageHeader";
 import Container from "@/components/Layout/Container";
 import HomePageBrands from "@/components/HomePage/HomePageBrands";
+import HomePageMetrics from "@/components/HomePage/HomePageMetrics";
+import HomePageAbout from "@/components/HomePage/HomePageAbout";
 
 export default function Home() {
   return (
@@ -20,6 +22,12 @@ export default function Home() {
       <FlexColumn className="gap-52">
         <HomePageHeader />
         <HomePageBrands />
+        <Container>
+          <FlexColumn className="gap-52">
+            <HomePageMetrics />
+            <HomePageAbout />
+          </FlexColumn>
+        </Container>
       </FlexColumn>
     </>
   );
