@@ -1,10 +1,33 @@
+import Image from "next/image";
+import SectionCard from "../UI/Section/SectionCard";
 import { FC } from "react";
+import FlexColumn from "../Layout/Flex/FlexColumn";
 
-const HomePageReviewItem: FC = () => {
+interface itemProps {
+  id: number;
+  name: string;
+  icon: string;
+  review: string;
+}
+
+interface Props {
+  item: itemProps;
+}
+const HomePageReviewItem: FC<Props> = ({ item }) => {
   return (
-    <div className="w-full h-96 bg-[#0D0D0D] rounded-xl">
-      HomePageReviewItem
-    </div>
+    <SectionCard>
+      <FlexColumn className="gap-5 text-lg">
+        <Image
+          src={item.icon}
+          alt={item.name}
+          width={100}
+          height={100}
+          className="rounded-full w-16 h-16 object-cover"
+        />
+        <p className="line-clamp-[7] text-ellipsis">{item.review}</p>
+      </FlexColumn>
+      <span>{item.name}</span>
+    </SectionCard>
   );
 };
 
