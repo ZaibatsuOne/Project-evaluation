@@ -1,7 +1,8 @@
+import * as yup from "yup";
 import DynamicForm from "./DynamicForm";
 import { FC } from "react";
 import { registerFormInputs as fields } from "@/data/form.data";
-import * as yup from "yup";
+
 const RegisterForm: FC = () => {
   const schema = yup.object({
     login: yup.string().required(),
