@@ -1,30 +1,15 @@
 import DynamicForm from "./DynamicForm";
 import { FC } from "react";
-
+import { registerFormInputs as fields } from "@/data/form.data";
+import * as yup from "yup";
 const RegisterForm: FC = () => {
-  const fields = [
-    {
-      placeholder: "Почта",
-      name: "email",
-      type: "text",
-    },
-    {
-      placeholder: "Логин",
-      name: "login",
-      type: "text",
-    },
-    {
-      placeholder: "Пароль",
-      name: "password",
-      type: "password",
-    },
-    {
-      placeholder: "Подтвердите пароль",
-      name: "submitPassword",
-      type: "password",
-    },
-  ];
-  return <DynamicForm fields={fields} />;
+  const schema = yup.object({
+    login: yup.string().required(),
+    email: yup.string().required(),
+    password: yup.string().required(),
+    submitPassword: yup.string().required(),
+  });
+  return <DynamicForm fields={fields} schema={schema} />;
 };
 
 export default RegisterForm;
