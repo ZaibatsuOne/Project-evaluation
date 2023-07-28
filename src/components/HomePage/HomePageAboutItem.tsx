@@ -20,10 +20,10 @@ const HomePageAboutItem: FC<Props> = ({ item }) => {
         item.id === 2 ? `flex-row-reverse` : ` `
       }`}
     >
-      <div className="ml-10 mr-10 lg:mx-0 w-full lg:w-[979px]  ">
+      <div className="ml-10 mr-10 lg:mx-0 w-full lg:w-[479px]  ">
         <Image
           src={item.icon}
-          width={979}
+          width={479}
           height={479}
           quality={100}
           alt="123"
@@ -31,7 +31,7 @@ const HomePageAboutItem: FC<Props> = ({ item }) => {
         />
       </div>
 
-      <FlexColumn className="gap-5 mx-10">
+      <FlexColumn className="gap-5 mx-10 w-1/2">
         <h3 className="text-4xl font-bold">{item.title}</h3>
         <p>{item.subtitle}</p>
       </FlexColumn>

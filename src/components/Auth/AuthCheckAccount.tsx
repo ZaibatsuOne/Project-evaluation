@@ -1,4 +1,5 @@
 import { Dispatch, FC, SetStateAction } from "react";
+import FlexRow from "../Layout/Flex/FlexRow";
 
 type Props = {
   stateForm: boolean;
@@ -6,15 +7,15 @@ type Props = {
 };
 const AuthCheckAccount: FC<Props> = ({ stateForm, setStateForm }) => {
   return (
-    <div>
+    <FlexRow className="gap-2 text-lg items-center justify-center">
       <span>{stateForm ? "Уже есть аккаунт ?" : "Нет аккаунта ?"}</span>
       <button
         className=" text-blue-400"
         onClick={(): void => setStateForm(!stateForm)}
       >
-        {stateForm ? "Зарегистрироваться" : "Войти"}
+        {stateForm ? "Войти" : "Зарегистрироваться"}
       </button>
-    </div>
+    </FlexRow>
   );
 };
 

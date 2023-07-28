@@ -16,6 +16,20 @@
     @apply gap-10 w-[600px] h-auto rounded-2xl bg-systemDarkGrey bg-opacity-70 text-white p-10;
   }
 }
+@layer base {
+  input {
+    @apply bg-systemGrey2 rounded-3xl text-xl py-4 px-7 w-full;
+  }
+  label {
+    @apply text-sm font-extralight text-start pl-5;
+  }
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 :root {
   @apply bg-systemWhite text-systemBlack;
   font-family: "Plus Jakarta Sans", sans-serif;
