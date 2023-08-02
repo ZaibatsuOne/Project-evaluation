@@ -13,7 +13,7 @@
     @apply bg-systemBlue  px-10 py-5 rounded-full text-systemWhite font-semibold;
   }
   .greyBtn {
-    @apply bg-systemGrey2  px-10 py-5 rounded-full text-systemDarkGrey font-semibold;
+    @apply bg-systemGrey2  px-10 py-2 rounded-full text-systemDarkGrey font-semibold;
   }
   .successBtn {
     @apply bg-systemGreen  px-10 py-5 rounded-full text-systemWhite font-semibold;
