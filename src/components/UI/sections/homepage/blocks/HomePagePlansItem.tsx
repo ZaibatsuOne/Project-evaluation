@@ -17,7 +17,9 @@ const HomePagePlansItem: FC<Props> = ({ item }) => {
     <SectionCard>
       <FlexColumn className="gap-10">
         <span className="text-lg">{item.type}</span>
-        <span className="text-[40px] font-bold">{item.price} Руб/Месяц</span>
+        <span className="text-[40px] font-bold whitespace-nowrap">
+          {item.price} <span className="text-2xl">Руб/Месяц</span>
+        </span>
         <ul>
           {item.options.map((option) => (
             <li className="flex items-center gap-2">

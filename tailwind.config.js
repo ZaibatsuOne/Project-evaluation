@@ -17,6 +17,8 @@ module.exports = {
         systemGrey4: "#D1D1D6",
         systemGrey5: "#E5E5EA",
         systemBlue: "#0A84FF",
+        systemRed: "#FF342B",
+        systemGreen: "#30C04F",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

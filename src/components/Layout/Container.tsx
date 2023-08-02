@@ -5,7 +5,7 @@ const Container: FC<PropsWithChildren<{ className?: string }>> = ({
   className,
 }) => {
   return (
-    <div className={cn("relative max-w-[1297px] ml-auto mr-auto", className)}>
+    <div className={cn("relative max-w-[1497px] ml-auto mr-auto", className)}>
       {children}
     </div>
   );

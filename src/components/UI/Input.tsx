@@ -10,7 +10,7 @@ interface Props {
 const Input: FC<Props> = ({ type, placeholder, register, errorMessage }) => {
   return (
     <div>
-      <label>{placeholder}</label>
+      <label className="text-lg">{placeholder}</label>
       <input {...register} type={type} />
       <p className="text-red-500 pl-5">{errorMessage}</p>
     </div>
