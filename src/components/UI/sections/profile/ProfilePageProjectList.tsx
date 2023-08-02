@@ -12,8 +12,8 @@ const ProfilePageProjectList: FC = () => {
         <button className="blueBtn">Создать проект</button>
       </FlexRow>
       <ul className="flex flex-col gap-5">
-        {projectList.map((item) => (
-          <ProfilePageProjectItem item={item} />
+        {projectList.map((item, index) => (
+          <ProfilePageProjectItem key={index} index={index} item={item} />
         ))}
       </ul>
     </FlexColumn>
