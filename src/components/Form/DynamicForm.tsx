@@ -7,8 +7,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 interface Props {
   fields: any;
   schema: any;
+  submitForm: any;
 }
-const DynamicForm: FC<Props> = ({ fields, schema }) => {
+const DynamicForm: FC<Props> = ({ fields, schema, submitForm }) => {
   const {
     register,
     handleSubmit,
@@ -19,7 +20,7 @@ const DynamicForm: FC<Props> = ({ fields, schema }) => {
   });
 
   return (
-    <form>
+    <form className="space-y-4 md:space-y-6" onSubmit={submitForm}>
       <FlexColumn className="gap-5">
         {fields.map((field: any) => (
           <Input
@@ -30,6 +31,7 @@ const DynamicForm: FC<Props> = ({ fields, schema }) => {
             type={field.type}
           />
         ))}
+        <button className="blueBtn">Войти</button>
       </FlexColumn>
     </form>
   );

@@ -13,23 +13,23 @@ export const authFormInputs = [
 
 export const registerFormInputs = [
   {
-    placeholder: "Почта",
-    name: "email",
+    placeholder: "Имя",
+    name: "firstName",
     type: "text",
   },
   {
-    placeholder: "Логин",
-    name: "login",
+    placeholder: "Фамилия",
+    name: "lastName",
     type: "text",
+  },
+  {
+    placeholder: "Почта",
+    name: "emailAddress",
+    type: "email",
   },
   {
     placeholder: "Пароль",
     name: "password",
-    type: "password",
-  },
-  {
-    placeholder: "Подтвердите пароль",
-    name: "submitPassword",
     type: "password",
   },
 ];

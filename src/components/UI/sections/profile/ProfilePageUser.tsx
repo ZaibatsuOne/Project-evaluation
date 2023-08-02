@@ -1,20 +1,13 @@
-import * as yup from "yup";
-import DynamicForm from "@/components/Form/DynamicForm";
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
 import { FC } from "react";
-import { profileUserFields as fields } from "@/data/form.data";
+import { UserProfile } from "@clerk/nextjs";
 
 const ProfilePageUser: FC = () => {
-  const schema = yup.object({
-    email: yup.string(),
-    firstName: yup.string(),
-    secondName: yup.string(),
-  });
   return (
     <section>
       <FlexColumn className="gap-10 w-1/2">
         <h2>Профиль</h2>
-        <DynamicForm fields={fields} schema={schema} />
+        <UserProfile />
       </FlexColumn>
     </section>
   );
