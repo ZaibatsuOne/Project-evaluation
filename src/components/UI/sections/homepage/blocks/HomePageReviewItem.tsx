@@ -4,7 +4,6 @@ import Image from "next/image";
 import ModalDark from "@/components/UI/Modal/ModalDark";
 import SectionCard from "@/components/UI/Section/SectionCard";
 import { FC, useState } from "react";
-
 interface itemProps {
   id: number;
   name: string;

@@ -4,6 +4,7 @@ import { Dispatch, FC, PropsWithChildren, SetStateAction } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 
 interface Props {
+  children: React.JSX.Element;
   visibleModal: boolean;
   setVisibleModal: Dispatch<SetStateAction<boolean>>;
 }
