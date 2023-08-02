@@ -1,5 +1,5 @@
-import FlexColumn from "../Layout/Flex/FlexColumn";
-import SectionCard from "../UI/Section/SectionCard";
+import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import SectionCard from "@/components/UI/Section/SectionCard";
 import { FC } from "react";
 import { IoMdCheckmark } from "react-icons/io";
 

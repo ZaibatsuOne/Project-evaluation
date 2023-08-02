@@ -1,9 +1,9 @@
-import Container from "../Layout/Container";
-import GridCol from "../Layout/Grid/GridCol";
-import HomePageMetricsItem from "./HomePageMetricsItem";
-import rocketUiIcon from "../../../public/ui/Rocket.png";
-import trophyUiIcon from "../../../public/ui/Trophy.png";
-import hourglassUiIcon from "../../../public/ui/Hourglass Done.png";
+import Container from "@/components/Layout/Container";
+import GridCol from "@/components/Layout/Grid/GridCol";
+import HomePageMetricsItem from "./blocks/HomePageMetricsItem";
+import rocketUiIcon from "../../../../../public/ui/Rocket.png";
+import trophyUiIcon from "../../../../../public/ui/Trophy.png";
+import hourglassUiIcon from "../../../../../public/ui/Hourglass Done.png";
 
 const HomePageMetrics = () => {
   const homepageMetrics = [

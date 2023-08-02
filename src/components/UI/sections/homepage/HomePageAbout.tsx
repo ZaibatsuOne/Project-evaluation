@@ -1,6 +1,6 @@
 import { homepageAbout } from "@/data/data";
-import FlexColumn from "../Layout/Flex/FlexColumn";
-import HomePageAboutItem from "./HomePageAboutItem";
+import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import HomePageAboutItem from "./blocks/HomePageAboutItem";
 import { FC } from "react";
 
 const HomePageAbout: FC = () => {

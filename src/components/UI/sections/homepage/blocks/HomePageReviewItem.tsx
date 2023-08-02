@@ -1,10 +1,9 @@
 "use client";
-
-import FlexColumn from "../Layout/Flex/FlexColumn";
+import FlexColumn from "@/components/Layout/Flex/FlexColumn";
 import Image from "next/image";
-import SectionCard from "../UI/Section/SectionCard";
+import ModalDark from "@/components/UI/Modal/ModalDark";
+import SectionCard from "@/components/UI/Section/SectionCard";
 import { FC, useState } from "react";
-import ModalDark from "../UI/Modal/ModalDark";
 
 interface itemProps {
   id: number;

@@ -1,7 +1,8 @@
 "use client";
-import { FC, PropsWithChildren } from "react";
 import cn from "clsx";
+import { FC, PropsWithChildren } from "react";
 import { motion } from "framer-motion";
+
 const FlexColumn: FC<PropsWithChildren<{ className?: string }>> = ({
   children,
   className,

@@ -1,6 +1,5 @@
-import Container from "../Layout/Container";
-import FlexRow from "../Layout/Flex/FlexRow";
-import HomePagePlansItem from "./HomePagePlansItem";
+import FlexRow from "@/components/Layout/Flex/FlexRow";
+import HomePagePlansItem from "./blocks/HomePagePlansItem";
 import { FC } from "react";
 import { homepagePlans } from "@/data/data";
 

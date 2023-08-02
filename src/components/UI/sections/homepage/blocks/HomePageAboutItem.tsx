@@ -1,5 +1,5 @@
-import FlexColumn from "../Layout/Flex/FlexColumn";
-import FlexRow from "../Layout/Flex/FlexRow";
+import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import FlexRow from "@/components/Layout/Flex/FlexRow";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -31,9 +31,9 @@ const HomePageAboutItem: FC<Props> = ({ item }) => {
         />
       </div>
 
-      <FlexColumn className="gap-5 mx-10 w-full xl:w-1/2">
+      <FlexColumn className="gap-5 mx-10 w-full xl:w-1/3">
         <h3 className="text-4xl font-bold">{item.title}</h3>
-        <p>{item.subtitle}</p>
+        <p className="text-xl">{item.subtitle}</p>
       </FlexColumn>
     </FlexRow>
   );
