@@ -16,8 +16,9 @@ module.exports = {
         systemGrey3: "#C7C7CC",
         systemGrey4: "#D1D1D6",
         systemGrey5: "#E5E5EA",
+        systemGrey6: "#F2F2F7",
         systemBlue: "#0A84FF",
-        systemRed: "#FF342B",
+        systemRed: "#FF3B30",
         systemGreen: "#30C04F",
       },
       backgroundImage: {
