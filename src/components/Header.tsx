@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
+import { Button } from "@/components/UI/Button";
 
 export default function Header() {
   const { userId } = auth();
@@ -21,19 +22,15 @@ export default function Header() {
       </Link>
       {userId ? (
         <FlexRow className="gap-5 items-center">
-          <Link href="/dashboard" className="greyBtn">
+          <Button variant="grey" size="sm" href="/dashboard">
             Панель
-          </Link>
+          </Button>
           <UserButton afterSignOutUrl="/" userProfileMode="modal" />
         </FlexRow>
       ) : (
-        <Link
-          href="/sign-in"
-          // onClick={(): void => setVisibleModal(true)}
-          className="blueBtn"
-        >
+        <Button variant="blue" size="sm" href="/sign-in">
           Войти
-        </Link>
+        </Button>
       )}
     </header>
   );
