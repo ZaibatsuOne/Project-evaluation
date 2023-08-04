@@ -6,6 +6,7 @@ import { Button } from "@/components/UI/Button";
 import { FC } from "react";
 import { Plus, KanbanSquare } from "lucide-react";
 import Link from "next/link";
+import Dialog from "../UI/Dialog";
 
 const ProfilePageProjectList: FC = () => {
   const projectList = [
@@ -19,25 +20,29 @@ const ProfilePageProjectList: FC = () => {
     },
   ];
   return (
-    <FlexColumn className="gap-10">
-      <FlexRow className="justify-between items-center">
-        <Subtitle>
-          <KanbanSquare />
-          Список проектов
-        </Subtitle>
-        <Button variant="blue" size="lg">
-          <Plus />
-          Создать проект
-        </Button>
-      </FlexRow>
-      <section className="grid grid-cols-4 gap-10 ">
-        {projectList.map((item, index) => (
-          <Link href={`/project/${item.id}`}>
-            <ProfilePageProjectBlock item={item} index={index} key={index} />
-          </Link>
-        ))}
-      </section>
-    </FlexColumn>
+    <>
+      <FlexColumn className="gap-10">
+        <FlexRow className="justify-between items-center">
+          <Subtitle>
+            <KanbanSquare />
+            Список проектов
+          </Subtitle>
+          <Dialog>
+            <Button variant="blue" size="lg">
+              <Plus />
+              Создать проект
+            </Button>
+          </Dialog>
+        </FlexRow>
+        <section className="grid grid-cols-4 gap-10 ">
+          {projectList.map((item, index) => (
+            <Link href={`/project/${item.id}`}>
+              <ProfilePageProjectBlock item={item} index={index} key={index} />
+            </Link>
+          ))}
+        </section>
+      </FlexColumn>
+    </>
   );
 };
 
