@@ -1,24 +1,23 @@
+"use client";
 import Container from "@/components/Layout/Container";
 import GridCol from "@/components/Layout/Grid/GridCol";
 import HomePageMetricsItem from "./blocks/MetricsBlock";
-import rocketUiIcon from "../../../public/ui/Rocket.png";
-import trophyUiIcon from "../../../public/ui/Trophy.png";
-import hourglassUiIcon from "../../../public/ui/Hourglass Done.png";
+import { Icons } from "../UI/Icons";
 
 const HomePageMetrics = () => {
   const homepageMetrics = [
     {
-      icon: rocketUiIcon,
+      icon: Icons.rocketUi,
       title: "1000+",
       subtitle: "Проектов оценнено",
     },
     {
-      icon: trophyUiIcon,
+      icon: Icons.trophyUi,
       title: "500+",
       subtitle: "Счастливых клиентов",
     },
     {
-      icon: hourglassUiIcon,
+      icon: Icons.hourGlass,
       title: "24/7",
       subtitle: "Доступность поддержки",
     },

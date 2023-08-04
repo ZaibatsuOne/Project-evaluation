@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 import { motion } from "framer-motion";
 interface itemProps {
-  icon: StaticImageData;
+  icon: any;
   title: string;
   subtitle: string;
 }
@@ -15,16 +15,7 @@ const HomePageMetricsItem: FC<{ item: itemProps }> = ({ item }) => {
         whileHover={{ scale: 1.05 }}
         className="relative card flex-col items-center justify-center gap-5 select-none shadow-xl"
       >
-        <div>
-          <Image
-            src={item.icon}
-            width={100}
-            quality={100}
-            height={100}
-            alt={item.subtitle}
-            objectFit="none"
-          />
-        </div>
+        <item.icon className="w-32 h-32" />
         <p className="text-5xl font-bold">{item.title}</p>
         <p className="font-bold">{item.subtitle}</p>
       </motion.article>
