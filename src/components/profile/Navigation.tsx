@@ -28,7 +28,8 @@ const ProfiePageNav: FC<Props> = ({ currentSection, setCurrentSection }) => {
     <nav className="flex gap-5">
       {menuList.map((item, index) => (
         <Button
-          variant="blueBorder"
+          key={item.name}
+          variant="default"
           size="sm"
           className={index === currentSection ? "bg-systemGrey4" : ""}
           onClick={(): void => setCurrentSection(index)}
