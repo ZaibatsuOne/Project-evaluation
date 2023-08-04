@@ -4,11 +4,20 @@ import ProfilePageProjectBlock from "./blocks/ProjectBlock";
 import Subtitle from "../UI/Subtitle";
 import { Button } from "@/components/UI/Button";
 import { FC } from "react";
-import { VscProject } from "react-icons/vsc";
 import { Plus, KanbanSquare } from "lucide-react";
+import Link from "next/link";
 
 const ProfilePageProjectList: FC = () => {
-  const projectList = ["Проект 1", "Проеsdf ds  кт 2", "Проект 3", "Проект 4"];
+  const projectList = [
+    {
+      id: 1,
+      name: "Проект 1",
+    },
+    {
+      id: 2,
+      name: "Проект 2",
+    },
+  ];
   return (
     <FlexColumn className="gap-10">
       <FlexRow className="justify-between items-center">
@@ -23,7 +32,9 @@ const ProfilePageProjectList: FC = () => {
       </FlexRow>
       <section className="grid grid-cols-4 gap-10 ">
         {projectList.map((item, index) => (
-          <ProfilePageProjectBlock item={item} index={index} key={index} />
+          <Link href={`/project/${item.id}`}>
+            <ProfilePageProjectBlock item={item} index={index} key={index} />
+          </Link>
         ))}
       </section>
     </FlexColumn>

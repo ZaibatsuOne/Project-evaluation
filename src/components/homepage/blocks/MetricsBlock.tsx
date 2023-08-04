@@ -1,9 +1,7 @@
-"use client";
-import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 import { motion } from "framer-motion";
 interface itemProps {
-  icon: any;
+  icon: JSX.ElementType;
   title: string;
   subtitle: string;
 }
