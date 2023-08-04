@@ -5,13 +5,12 @@ import { Grip } from "lucide-react";
 import SectionBlock from "@/components/UI/Section/SectionBlock";
 
 interface Props {
-  index: number;
   item: string;
 }
-const ProfilePageProjectBlock: FC<Props> = ({ index, item }) => {
+const ProfilePageProjectBlock: FC<Props> = ({ item }) => {
   return (
     <SectionBlock>
-      <FlexColumn className="h-full">
+      <FlexColumn className="h-full justify-between">
         <div className="flex-grow">
           <span className="flex items-center gap-2 text-3xl text-systemDarkGrey overflow-hidden text-ellipsis line-clamp-5">
             <Grip />

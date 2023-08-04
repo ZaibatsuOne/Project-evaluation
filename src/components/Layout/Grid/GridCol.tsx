@@ -9,7 +9,7 @@ const GridCol: FC<
 > = ({ children, className, cols }) => {
   return (
     <div
-      className={cn(`grid items-center`, className, {
+      className={cn(`grid`, className, {
         "grid-cols-4": cols === 4,
       })}
     >

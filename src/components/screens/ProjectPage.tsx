@@ -4,6 +4,7 @@ import Header from "@/components/project/Header";
 import Navigation from "@/components/project/Navigation";
 import FlexColumn from "../Layout/Flex/FlexColumn";
 import PhaseList from "../project/PhaseList";
+import Tasks from "../project/Tasks";
 
 const ProjectPage: FC = () => {
   return (
@@ -12,6 +13,7 @@ const ProjectPage: FC = () => {
         <Header />
         <Navigation />
         <PhaseList />
+        <Tasks />
       </FlexColumn>
     </Container>
   );

@@ -10,7 +10,7 @@ const SectionBlock: FC<PropsWithChildren<Props>> = ({
 }) => {
   return (
     <section
-      className={cn("h-[300px] bg-systemGrey5 p-8 rounded-3xl", className)}
+      className={cn("flex h-80 bg-systemGrey5 p-8 rounded-3xl", className)}
     >
       {children}
     </section>

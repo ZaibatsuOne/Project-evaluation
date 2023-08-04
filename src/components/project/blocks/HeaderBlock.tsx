@@ -15,8 +15,8 @@ const HeaderBlock: FC<Props> = ({ headerBlock }) => {
   const { title, count } = headerBlock;
   return (
     <SectionBlock className="h-[150px]">
-      <FlexColumn className="h-full justify-between">
-        <FlexRow className="justify-between w-full items-center">
+      <FlexColumn className="justify-between">
+        <FlexRow className="items-center justify-between w-full">
           <p className="text-2xl font-bold">{title}</p>
           <headerBlock.icon />
         </FlexRow>
