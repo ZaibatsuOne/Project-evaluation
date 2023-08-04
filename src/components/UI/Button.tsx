@@ -11,6 +11,7 @@ const buttonVariants = cva(
         default: "bg-systemGrey5 text-systemDarkGrey font-semibold",
         grey: "bg-systemGrey2 text-systemDarkGrey font-semibold",
         blue: "bg-systemBlue text-systemWhite font-semibold",
+        blueBorder: "border-solid, border-b-2 p-2 text-xl",
       },
       size: {
         sm: "px-10 py-2",
