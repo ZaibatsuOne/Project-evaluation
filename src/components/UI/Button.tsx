@@ -4,18 +4,17 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus:outline-none",
+  "flex gap-2 items-center justify-center rounded-full text-sm font-medium transition-colors focus:outline-none hover:opacity-80",
   {
     variants: {
       variant: {
-        default:
-          "bg-slate-900 text-white hover:bg-slate-700 dark:bg-slate-50 dark:text-slate-900",
+        default: "bg-systemGrey5 text-systemDarkGrey font-semibold",
         grey: "bg-systemGrey2 text-systemDarkGrey font-semibold",
         blue: "bg-systemBlue text-systemWhite font-semibold",
       },
       size: {
         sm: "px-10 py-2",
-        lg: "px-10 py-5",
+        lg: "px-10 py-5 text-base",
       },
     },
     defaultVariants: {

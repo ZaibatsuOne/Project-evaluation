@@ -1,5 +1,5 @@
 import FlexRow from "@/components/Layout/Flex/FlexRow";
-import HomePagePlansItem from "./blocks/HomePagePlansItem";
+import HomePagePlansItem from "./blocks/PlansBlock";
 import { FC } from "react";
 import { homepagePlans } from "@/data/data";
 

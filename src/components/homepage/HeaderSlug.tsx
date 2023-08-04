@@ -1,7 +1,7 @@
 import Container from "@/components/Layout/Container";
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
-import CreateProjectButton from "../../Buttons/CreateProjectButton";
-import SectionSubtitle from "../../Section/SectionSubtitle";
+import SectionSubtitle from "../UI/Section/SectionSubtitle";
+import CreateProjectButton from "@/components/UI/Buttons/CreateProjectButton";
 
 const HomePageHeader = () => {
   return (

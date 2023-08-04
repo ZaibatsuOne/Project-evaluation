@@ -6,15 +6,6 @@
   .card {
     @apply flex w-96 h-96 rounded-xl bg-systemGrey4 shadow-xl;
   }
-  .defaultBtn {
-    @apply bg-systemGrey5 rounded-xl p-2 text-systemDarkGrey font-semibold;
-  }
-  .blueBtn {
-    @apply bg-systemBlue  px-10 py-5 rounded-full text-systemWhite font-semibold;
-  }
-  .greyBtn {
-    @apply bg-systemGrey2  px-10 py-2 rounded-full text-systemDarkGrey font-semibold;
-  }
   .successBtn {
     @apply bg-systemGreen  px-10 py-5 rounded-full text-systemWhite font-semibold;
   }

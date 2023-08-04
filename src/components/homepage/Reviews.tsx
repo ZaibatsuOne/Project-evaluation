@@ -1,5 +1,5 @@
 import FlexRow from "@/components/Layout/Flex/FlexRow";
-import HomePageReviewItem from "./blocks/HomePageReviewItem";
+import HomePageReviewItem from "./blocks/ReviewsBlock";
 import { FC } from "react";
 import { homepageReview } from "@/data/data";
 

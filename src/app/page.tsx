@@ -1,13 +1,5 @@
-import Container from "@/components/Layout/Container";
-import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import HomePage from "@/components/screens/HomePage";
 import Head from "next/head";
-import HomePageAbout from "@/components/UI/sections/homepage/HomePageAbout";
-import HomePageBrands from "@/components/UI/sections/homepage/HomePageBrands";
-import HomePageFooter from "@/components/UI/sections/homepage/HomePageFooter";
-import HomePageHeader from "@/components/UI/sections/homepage/HomePageHeader";
-import HomePageMetrics from "@/components/UI/sections/homepage/HomePageMetrics";
-import HomePagePlans from "@/components/UI/sections/homepage/HomePagePlans";
-import HomePageRewiew from "@/components/UI/sections/homepage/HomePageRewiew";
 
 export default function Home() {
   return (
@@ -21,25 +13,9 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <FlexColumn className="gap-52">
-        <HomePageHeader />
-        <HomePageBrands />
-        <Container>
-          <FlexColumn className="gap-52">
-            <HomePageMetrics />
-            <HomePageAbout />
-          </FlexColumn>
-        </Container>
-        <FlexColumn className="bg-systemBlack gap-52">
-          <Container>
-            <FlexColumn className="gap-52">
-              <HomePagePlans />
-              <HomePageRewiew />
-              <HomePageFooter />
-            </FlexColumn>
-          </Container>
-        </FlexColumn>
-      </FlexColumn>
+      <main>
+        <HomePage />
+      </main>
     </>
   );
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { auth } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/UI/Button";
+import { LayoutDashboard } from "lucide-react";
 
 export default function Header() {
   const { userId } = auth();
@@ -22,7 +23,8 @@ export default function Header() {
       </Link>
       {userId ? (
         <FlexRow className="gap-5 items-center">
-          <Button variant="grey" size="sm" href="/dashboard">
+          <Button variant="grey" size="sm" href="/dashboard" className="gap-2">
+            <LayoutDashboard />
             Панель
           </Button>
           <UserButton afterSignOutUrl="/" userProfileMode="modal" />

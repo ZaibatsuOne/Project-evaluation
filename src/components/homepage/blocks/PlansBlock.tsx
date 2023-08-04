@@ -1,4 +1,5 @@
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import { Button } from "@/components/UI/Button";
 import SectionCard from "@/components/UI/Section/SectionCard";
 import { FC } from "react";
 import { IoMdCheckmark } from "react-icons/io";
@@ -22,16 +23,16 @@ const HomePagePlansItem: FC<Props> = ({ item }) => {
         </span>
         <ul>
           {item.options.map((option) => (
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2 ">
               <IoMdCheckmark />
               <p>{option}</p>
             </li>
           ))}
         </ul>
       </FlexColumn>
-      <button className="defaultBtn">
+      <Button variant="default" size="sm">
         {item.id === 1 ? "Приступить сейчас" : "Перейти на Премиум"}
-      </button>
+      </Button>
     </SectionCard>
   );
 };
