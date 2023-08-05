@@ -1,11 +1,11 @@
 "use client";
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
+import FlexRow from "@/components/Layout/Flex/FlexRow";
 import SectionBlock from "@/components/UI/Section/SectionBlock";
-import { ArrowDownSquare, Trash2, FileTerminal, Book } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ArrowDownSquare, Book, FileTerminal, Trash2 } from "lucide-react";
 import { Button } from "@/components/UI/Button";
 import { FC, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import FlexRow from "@/components/Layout/Flex/FlexRow";
 
 interface TaskProps {
   title: string;

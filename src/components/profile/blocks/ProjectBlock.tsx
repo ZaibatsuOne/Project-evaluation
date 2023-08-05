@@ -1,11 +1,15 @@
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
-import { FC } from "react";
-import { PiTrashLight } from "react-icons/pi";
-import { Grip } from "lucide-react";
 import SectionBlock from "@/components/UI/Section/SectionBlock";
+import { FC } from "react";
+import { Grip } from "lucide-react";
+import { PiTrashLight } from "react-icons/pi";
 
+interface ItemProps {
+  id: number;
+  name: string;
+}
 interface Props {
-  item: string;
+  item: ItemProps;
 }
 const ProfilePageProjectBlock: FC<Props> = ({ item }) => {
   return (

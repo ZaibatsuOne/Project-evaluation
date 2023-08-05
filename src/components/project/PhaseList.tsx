@@ -1,7 +1,7 @@
-import { FC } from "react";
-import { Button } from "@/components/UI/Button";
 import FlexRow from "@/components/Layout/Flex/FlexRow";
 import { Box } from "lucide-react";
+import { Button } from "@/components/UI/Button";
+import { FC } from "react";
 const PhaseList: FC = () => {
   const phaseList = [
     "Фаза 1",

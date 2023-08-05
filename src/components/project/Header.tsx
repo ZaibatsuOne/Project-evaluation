@@ -8,6 +8,7 @@ import {
   BatteryCharging,
 } from "lucide-react";
 import FlexColumn from "../Layout/Flex/FlexColumn";
+import Subtitle from "../UI/Subtitle";
 
 const Header: FC = () => {
   const headerBlockList = [
@@ -35,7 +36,7 @@ const Header: FC = () => {
   return (
     <header>
       <FlexColumn className="gap-10">
-        <h1 className="text-4xl font-bold">Название проекта</h1>
+        <Subtitle>Название проекта</Subtitle>
         <GridCol cols={4} className="gap-5">
           {headerBlockList.map((headerBlock) => (
             <HeaderBlock headerBlock={headerBlock} />

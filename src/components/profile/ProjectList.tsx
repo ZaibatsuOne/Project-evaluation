@@ -1,12 +1,12 @@
+import Dialog from "../UI/Dialog";
 import FlexColumn from "@/components/Layout/Flex/FlexColumn";
 import FlexRow from "@/components/Layout/Flex/FlexRow";
+import Link from "next/link";
 import ProfilePageProjectBlock from "./blocks/ProjectBlock";
-import Subtitle from "../UI/Subtitle";
+import Subtitle from "@/components/UI/Subtitle";
 import { Button } from "@/components/UI/Button";
 import { FC } from "react";
-import { Plus, KanbanSquare } from "lucide-react";
-import Link from "next/link";
-import Dialog from "../UI/Dialog";
+import { KanbanSquare, Plus } from "lucide-react";
 
 const ProfilePageProjectList: FC = () => {
   const projectList = [
@@ -35,9 +35,9 @@ const ProfilePageProjectList: FC = () => {
           </Dialog>
         </FlexRow>
         <section className="grid grid-cols-4 gap-10 ">
-          {projectList.map((item, index) => (
+          {projectList.map((item) => (
             <Link href={`/project/${item.id}`}>
-              <ProfilePageProjectBlock item={item} index={index} key={index} />
+              <ProfilePageProjectBlock item={item} key={item.id} />
             </Link>
           ))}
         </section>

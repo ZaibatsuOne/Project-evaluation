@@ -1,12 +1,15 @@
-import { FC, PropsWithChildren } from "react";
 import cn from "clsx";
+import { FC, PropsWithChildren } from "react";
 
-const GridCol: FC<
-  PropsWithChildren<{
-    className?: string;
-    cols: number;
-  }>
-> = ({ children, className, cols }) => {
+interface Props {
+  className?: string;
+  cols: number;
+}
+const GridCol: FC<PropsWithChildren<Props>> = ({
+  children,
+  className,
+  cols,
+}) => {
   return (
     <div
       className={cn(`grid`, className, {
